@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pattern Generator</title>
+</head>
+<body>
+
+<div id="pattern-container"></div>
+
+<script>
+function generatePattern(rows) {
+  let patternContainer = document.getElementById("pattern-container");
+  let pattern = '';
+
+  for (let i = 1; i <= rows; i++) {
+    for (let j = 1; j <= i; j++) {
+      pattern += '*';
+    }
+    pattern += '<br>'; // Add a line break after each row
+  }
+
+  patternContainer.innerHTML = pattern; // Set the pattern as the content of the div
+}
+
+// Call the function with the desired number of rows
+generatePattern(6);
+</script>
+
+</body>
+</html>
