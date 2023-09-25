@@ -1,0 +1,18 @@
+<!-- Interpret the following JavaScript code embedded in HTML-->
+<html>
+    <body>
+        <h1 id="demo"></h1>
+    
+    <script>
+        var person = {
+            firstName: "Susan",
+            lastName: "Ayieko",
+        };
+        document.getElementById("demo").innerHTML = person.firstName + " is " + person.age;
+    </script>
+    </body>
+</html>
+
+<!-- In summary, this HTML document contains JavaScript code that creates a person object with a first name and a last name. 
+    It then attempts to set the content of the <h1> element with the id "demo" to "Susan is undefined" because 
+        there is no age property defined in the person object -->
