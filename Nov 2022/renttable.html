@@ -1,0 +1,33 @@
+<!--Write a JavaScript program embedded in HTML that would prompt a user to enter monthly rent. 
+    The program should determine and display the type of house on the browser. Use the if construct-->
+
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>House Type Calculator</title>
+    </head>
+    <body>
+        <script>
+            // Prompt the user to enter monthly rent
+            var monthlyRent = parseFloat(prompt("Enter your monthly rent:"));
+    
+            // Check the monthly rent and determine the house type
+            var houseType;
+    
+            if (monthlyRent > 5000 && monthlyRent < 10000) {
+                houseType = "One bedroomed House";
+            } else if (monthlyRent >= 10000 && monthlyRent < 15000) {
+                houseType = "Two bedroomed House";
+            } else if (monthlyRent >= 15000 && monthlyRent < 20000) {
+                houseType = "Three bedroomed House";
+            } else {
+                houseType = "No allocation for that amount";
+            }
+    
+            // Display the result on the browser
+            document.write("<p>Your monthly rent of $" + monthlyRent + " qualifies you for a " + houseType + ".</p>");
+        </script>
+    </body>
+    </html>
+    
