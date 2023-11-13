@@ -1,0 +1,33 @@
+<html>
+<head>
+  <title>Number Check</title>
+</head>
+<body>
+  <h1>Number Check</h1>
+  <script>
+    function promptForNumber() {
+      var number = prompt("Enter a number: ");
+      return number;
+    }
+
+    function checkNumber(number) {
+      if (number < 10) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    function displayResult(number) {
+      if (checkNumber(number)) {
+        alert("The number is less than 10.");
+      } else {
+        alert("The number is not less than 10.");
+      }
+    }
+
+    var number = promptForNumber();
+    displayResult(number);
+  </script>
+</body>
+</html>
