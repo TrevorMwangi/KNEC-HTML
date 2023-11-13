@@ -3,27 +3,26 @@ area of a triangle whose base length is 400 and height is 100. The program shoul
 the results on the browser shown in the statement below:
            The area of the triangle is.... -->
 
-<!DOCTYPE html>
 <html>
-<head>
-<title>Triangle Area Calculation</title>
-</head>
-<body>
-  <script>
-    // Define a function to calculate the area of a triangle
-    function calculateTriangleArea(base, height) {
-      return 0.5 * base * height;
-    }
-
-    // Given length and height of the triangle
-    const length = 400;
-    const height = 100;
-
-    // Calculate the area using the function
-    const area = calculateTriangleArea(length, height);
-
-    // Display the area using an alert box
-    alert(`The area of the triangle is: ${area}`);
-  </script>
-</body>
+  <head>
+    <title>Triangle Area Calculator</title>
+      <script>
+      // Function to calculate the area of a triangle
+        function calculateTriangleArea(base, height) {
+          return 0.5 * base * height;
+          }
+           
+        var base = 400;
+        var height = 100;
+           
+      // Calculate the area using the function
+        var area = calculateTriangleArea(base, height);
+           
+      // Display the result on the browser using document.write
+      alert("The area of the triangle is: " + area);
+      </script>
+  </head>
 </html>
+           
+
+
