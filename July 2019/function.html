@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>Product of Two Numbers</title>
+</head>
+<body>
+  <h1>Product of Two Numbers</h1>
+  <script>
+    function promptForNumbers() {
+      var firstNumber = prompt("Enter the first number: ");
+      var secondNumber = prompt("Enter the second number: ");
+      return [firstNumber, secondNumber];
+    }
+
+    function computeProduct(firstNumber, secondNumber) {
+      return firstNumber * secondNumber;
+    }
+
+    function displayResult(product) {
+      alert("The product of the two numbers is: " + product);
+    }
+
+    var numbers = promptForNumbers();
+    var product = computeProduct(numbers[0], numbers[1]);
+    displayResult(product);
+  </script>
+</body>
+</html>
