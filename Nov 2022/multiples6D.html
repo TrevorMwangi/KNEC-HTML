@@ -1,5 +1,5 @@
 <!--Write a JavaScript program embedded in HTML that would display
-      all the multiples of 5 starting from 30 to 100 on a console window. Use a while loop -->
+      all the multiples of 5 to 100. Use a while loop -->
 
 <!DOCTYPE html>
 <html>
@@ -8,12 +8,12 @@
 </head>
 <body>
     <script>
-        let num = 30;
+        let num =10;
 
         // Use a while loop to display multiples of 5
         while (num <= 100) {
-            if (num % 5 === 0) {
-                console.log(num);
+            if (num % 5 == 0) {
+                document.write(num + "<br />");
             }
             num++;
         }
@@ -22,8 +22,5 @@
 </html>
 
 <!-- This HTML page contains a <script> element that initializes a variable
-     num to 30 and then uses a while loop to check if num is a multiple of 5 and, if so, displays it in the console.
-      The loop continues until num reaches or exceeds 100. When you open this HTML page 
-      in a web browser and open the browser's console (usually by pressing F12 or 
-      right-clicking and selecting "Inspect"), you will see the multiples of 5
-       displayed in the console window.-->
+     num to any desired and then uses a while loop to check if num is a multiple of 5 and, if so, displays it.
+      The loop continues until num reaches or exceeds 100.-->
